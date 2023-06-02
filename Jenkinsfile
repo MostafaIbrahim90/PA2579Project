@@ -6,8 +6,9 @@ pipeline {
         sh 'python3 --version'
       }
     }
-    stage('hello') {
+    stage('SystemTesting') {
       steps {
+        sh 'pip3 install selenium'
         sh 'python3 Demo/main.py'
       }
     }
