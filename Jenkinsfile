@@ -16,13 +16,13 @@ pipeline {
         sh 'python3 --version'
       }
     }
-    stage('UnitTesting') {
+    stage('Unit Testing') {
       steps {
           sh 'pip3 install pytest'
-             'pytest unittest/'
+          sh 'pytest unittest/'
       }
     }
-    stage('SystemTesting') {
+    stage('System Testing') {
       steps {
         sh 'pip install -r requirements.txt'
         sh 'pip3 install selenium'
