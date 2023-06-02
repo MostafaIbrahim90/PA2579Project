@@ -5,9 +5,9 @@ from pyvirtualdisplay import Display
 
 def execute_test_case(useremail, userpassword):
     print("test case 01 started")
-    display = Display(visible=0, size=(800, 800))  
+    display = Display(visible=0, size=(800, 600))
     display.start()
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
     #maximize the window size
     driver.maximize_window()
     #navigate to the url
