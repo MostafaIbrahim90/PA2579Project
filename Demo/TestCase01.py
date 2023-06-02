@@ -1,12 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-from pyvirtualdisplay import Display
 
 def execute_test_case(useremail, userpassword):
-    print("test case 01 started")
-    display = Display(visible=0, size=(800, 600))
-    display.start()
+    print("test case 01 started")>
     driver = webdriver.Firefox()
     #maximize the window size
     driver.maximize_window()
