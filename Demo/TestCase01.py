@@ -4,7 +4,7 @@ import time
 
 def execute_test_case(useremail, userpassword):
     print("test case 01 started")
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome()
     #maximize the window size
     driver.maximize_window()
     #navigate to the url
