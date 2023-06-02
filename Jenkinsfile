@@ -9,6 +9,7 @@ pipeline {
     stage('SystemTesting') {
       steps {
         sh 'pip3 install selenium'
+        sh 'pip3 install pyvirtualdisplay'
         sh 'pip3 install webdriver-manager'
         sh 'python3 Demo/main.py'
       }
