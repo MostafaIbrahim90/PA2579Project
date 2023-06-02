@@ -10,7 +10,10 @@ pipeline {
       steps {
         sh 'pip install -r requirements.txt'
         sh 'pip3 install selenium'
-        sh 'sbase install chromedriver latest'
+        sh 'wget https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_linux64.zip'
+        sh 'unzip chromedriver_linux64.zip'
+        sh 'sudo mv chromedriver /usr/local/bin/'
+        sh 'hmod +x /usr/local/bin/chromedriver'
         sh 'pip3 install webdriver-manager'
         sh 'python3 Demo/main.py'
       }
