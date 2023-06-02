@@ -18,8 +18,8 @@ pipeline {
     }
     stage('UnitTesting') {
       steps {
-        sh 'pip install pytest'
-        sh 'pytest unittest/'
+          sh 'pip3 install pytest'
+             'pytest unittest/'
       }
     }
     stage('SystemTesting') {
